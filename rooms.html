@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rooms & Suites — LuxeStay Hotel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>:root{--gold:#D4AF37;--navy:#0B2545}html{scroll-behavior:smooth}.focus-ring:focus{outline:2px solid rgba(11,37,69,0.25);outline-offset:2px}</style>
+</head>
+<body class="font-poppins text-gray-700">
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3" aria-label="LuxeStay Hotel homepage">
+        <div class="w-10 h-10 rounded-md bg-gradient-to-br from-gray-900 to-gray-700 flex items-center justify-center text-white font-semibold">LS</div>
+        <div>
+          <h1 class="text-lg font-semibold text-gray-900">LuxeStay Hotel</h1>
+          <p class="text-xs text-gray-500">Luxury Boutique Hotel</p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-6" aria-label="Main navigation">
+        <a href="index.html" class="text-sm hover:text-gray-900">Home</a>
+        <a href="about.html" class="text-sm hover:text-gray-900">About</a>
+        <a href="rooms.html" class="text-sm hover:text-gray-900">Rooms</a>
+        <a href="amenities.html" class="text-sm hover:text-gray-900">Amenities</a>
+        <a href="gallery.html" class="text-sm hover:text-gray-900">Gallery</a>
+        <a href="contact.html" class="text-sm hover:text-gray-900">Contact</a>
+        <a href="#" class="ml-4 inline-block px-4 py-2 rounded-md text-white" style="background:var(--gold);color:#08203a;">Book Now</a>
+      </nav>
+
+      <div class="lg:hidden">
+        <button id="navToggle" class="p-2 focus-ring rounded-md" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <div class="px-4 py-4 flex flex-col gap-3">
+        <a href="index.html" class="text-gray-700">Home</a>
+        <a href="about.html" class="text-gray-700">About</a>
+        <a href="rooms.html" class="text-gray-700">Rooms</a>
+        <a href="amenities.html" class="text-gray-700">Amenities</a>
+        <a href="gallery.html" class="text-gray-700">Gallery</a>
+        <a href="contact.html" class="text-gray-700">Contact</a>
+        <a href="#" class="mt-2 inline-block px-4 py-2 rounded-md text-white" style="background:var(--gold);color:#08203a;">Book Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-6 py-12">
+    <h2 class="text-3xl font-bold">Rooms & Suites</h2>
+    <p class="mt-3 text-gray-600">Choose from our curated selection of rooms and suites designed for comfort and elegance.</p>
+
+    <section class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Sample detailed cards -->
+      <article class="bg-white border rounded-lg overflow-hidden shadow-sm">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop" alt="Deluxe Room" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="font-semibold">Deluxe Room</h3>
+          <p class="mt-2 text-sm text-gray-500">Comfortable king bed, city view, in-room coffee and luxury bath.</p>
+          <ul class="mt-3 text-sm text-gray-500 list-disc list-inside">
+            <li>King-size bed</li>
+            <li>Complimentary Wi-Fi</li>
+            <li>Flat-screen TV</li>
+          </ul>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="text-lg font-bold">$229/night</div>
+            <div class="flex gap-2">
+              <a href="#" class="px-3 py-2 border rounded-md">View Details</a>
+              <a href="#" class="px-3 py-2 rounded-md text-white" style="background:var(--gold);color:#08203a;">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bg-white border rounded-lg overflow-hidden shadow-sm">
+        <img src="assets/images/executive_suite.png" alt="Executive Suite" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="font-semibold">Executive Suite</h3>
+          <p class="mt-2 text-sm text-gray-500">Large living area, work desk, premium toiletries, breakfast included.</p>
+          <ul class="mt-3 text-sm text-gray-500 list-disc list-inside">
+            <li>Separate living area</li>
+            <li>Complimentary breakfast</li>
+            <li>Priority check-in</li>
+          </ul>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="text-lg font-bold">$389/night</div>
+            <div class="flex gap-2">
+              <a href="#" class="px-3 py-2 border rounded-md">View Details</a>
+              <a href="#" class="px-3 py-2 rounded-md text-white" style="background:var(--gold);color:#08203a;">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="bg-white border rounded-lg overflow-hidden shadow-sm">
+        <img src="assets/images/suite_room.png" alt="Presidential Suite" class="w-full h-48 object-cover" />
+        <div class="p-4">
+          <h3 class="font-semibold">Presidential Suite</h3>
+          <p class="mt-2 text-sm text-gray-500">Private terrace, panoramic views, dedicated concierge and personalized services.</p>
+          <ul class="mt-3 text-sm text-gray-500 list-disc list-inside">
+            <li>Private terrace</li>
+            <li>Personal concierge</li>
+            <li>Custom dining options</li>
+          </ul>
+          <div class="mt-4 flex items-center justify-between">
+            <div class="text-lg font-bold">$899/night</div>
+            <div class="flex gap-2">
+              <a href="#" class="px-3 py-2 border rounded-md">View Details</a>
+              <a href="#" class="px-3 py-2 rounded-md text-white" style="background:var(--gold);color:#08203a;">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="bg-white border-t mt-12">
+      <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <h4 class="font-semibold">LuxeStay Hotel</h4>
+          <p class="text-sm text-gray-500 mt-2">125 Code Aveneu, Somewhere Around The World</p>
+          <p class="text-sm text-gray-500 mt-1">Phone: <a href="tel:+2348068578671" class="text-gray-700">+234-8068578671</a></p>
+        </div>
+        <div>
+          <h5 class="font-semibold">Quick Links</h5>
+          <ul class="mt-3 text-sm text-gray-500 space-y-2">
+            <li><a href="rooms.html" class="hover:underline">Rooms & Suites</a></li>
+            <li><a href="amenities.html" class="hover:underline">Amenities</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold">Subscribe</h5>
+          <p class="text-sm text-gray-500 mt-2">Get exclusive offers and updates.</p>
+          <form class="mt-3 flex gap-2" action="#" onsubmit="return false;">
+            <label class="sr-only" for="footer-email">Email</label>
+            <input id="footer-email" type="email" placeholder="Your email" class="px-3 py-2 border rounded-md w-full" />
+            <button class="px-4 py-2 rounded-md text-white" style="background:var(--gold);color:#08203a;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+
